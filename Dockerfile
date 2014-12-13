@@ -6,6 +6,7 @@ MAINTAINER Matthew R Hanlon <mrhanlon@gmail.com>
 # install rubygems for sass, compass
 # install uwsgi
 
-RUN apt-get install -y nginx supervisor ruby ruby-dev && \
+RUN apt-get update && \
+    apt-get install -y nginx supervisor ruby ruby-dev && \
     gem install sass compass && \
     pip install uwsgi
