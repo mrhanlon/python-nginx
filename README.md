@@ -41,3 +41,5 @@ EXPOSE 80 443
 CMD ["supervisord", "-n"]
 
 ```
+
+See [mrhanlon/python-nginx-example-app](https://github.com/mrhanlon/python-nginx-example-app) for example usage in action.
